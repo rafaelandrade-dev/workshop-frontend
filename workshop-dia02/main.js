@@ -4,7 +4,7 @@ const password = document.querySelector('#inputPassword')
 function validarFormulario(event){
     event.preventDefault()
 
-    if(email.value === '' || password.value === '') { 
+    if(email.value === "" || password.value === "") { 
         alert('Preencha todos os campos!')
         return
     } else {

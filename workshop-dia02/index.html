@@ -5,26 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop Dia 2</title>
-    <style>
-        body{
-           justify-content: center;
-           align-items: center; 
-        }
-        form{
-            display: flex;
-            flex-direction: column;
-            max-width: 20vw;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form onsubmit="validarFormulario(event)">
-        <input type="email" name="inputEmail" id="inputEmail" placeholder="Digite seu email">
-        <input type="password" name="inputPassword" id="inputPassword" placeholder="Digite sua senha">
-        <button type="submit">Enviar</button>
-    </form>
+    <main>
+        <div class="login-container">
+            <div class="title">
+                <h1>
+                    Login
+                </h1>
+            </div>
+            <form onsubmit="validarFormulario(event)">
+                <div class="email-password-container">
+                    <input type="email" name="inputEmail" id="inputEmail" placeholder="Digite seu email" class="input-block">
+                    <input type="password" name="inputPassword" id="inputPassword" placeholder="Digite sua senha" class="input-block pass">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
 
-    <script src="script.js"></script>
+
     <script src="main.js"></script>
 </body>
 </html>
